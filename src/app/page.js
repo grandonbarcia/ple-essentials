@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Logo from './assets/ple-essentials-favicon-black.png';
 import Logo2 from './assets/ple-essentials-high-resolution-logo-white-transparent.png';
 import Warehouse from './assets/warehouse.jpg';
-import Turbo from './assets/turbo.jpg';
+import Turbo from './assets/turbo.png';
 import './globals.css';
 export default function Home() {
   function CustomButton({ children }) {
@@ -68,9 +68,9 @@ export default function Home() {
         <div className="w-1/3">
           <Image src={Turbo}></Image>
         </div>
-        <div className="w-1/3">
-          <div>About Us</div>
-          <div>
+        <div className="flex flex-col gap-3 w-1/3 text-white">
+          <div className="text-6xl font-extrabold ">About Us</div>
+          <div className="text-xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -99,8 +99,11 @@ export default function Home() {
             ></path>
           </svg>
         </div>
-        <div className="flex flex-col justify-center items-center">
-          <div> Our Services</div>
+        <div className="flex flex-col justify-center items-center gap-20">
+          <div className="text-6xl font-extrabold text-gray-800">
+            {' '}
+            Our Services
+          </div>
           <div className="flex justify-between items-center w-full">
             <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
@@ -130,9 +133,9 @@ export default function Home() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -167,9 +170,9 @@ export default function Home() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -204,9 +207,9 @@ export default function Home() {
                   >
                     <path
                       stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth="2"
                       d="M1 5h12m0 0L9 1m4 4L9 9"
                     />
                   </svg>
@@ -234,17 +237,17 @@ export default function Home() {
           <div>Contact</div>
           <section className=" dark:bg-gray-900">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-              <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white">
+              <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-white">
                 Contact Us
               </h2>
-              <p className="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl">
+              <p className="mb-8 lg:mb-16 font-light text-center text-white  sm:text-xl">
                 Got a technical issue? Want to send feedback about a beta
                 feature? Need details about our Business plan? Let us know.
               </p>
               <form action="#" className="space-y-8">
                 <div>
                   <label
-                    for="email"
+                    htmlFor="email"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Your email
@@ -259,7 +262,7 @@ export default function Home() {
                 </div>
                 <div>
                   <label
-                    for="subject"
+                    htmlFor="subject"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
                   >
                     Subject
@@ -274,7 +277,7 @@ export default function Home() {
                 </div>
                 <div className="sm:col-span-2">
                   <label
-                    for="message"
+                    htmlFor="message"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
                   >
                     Your message
