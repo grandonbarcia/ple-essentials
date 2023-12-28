@@ -22,39 +22,39 @@ export default function Home() {
   }
 
   return (
-    <main>
-      <section className="md:container md:mx-auto px-4 flex justify-between items-center">
-        <div className="flex items-center">
+    <main className="tracking-wide">
+      <section className="md:container md:mx-auto px-4 flex justify-center  md:justify-between items-center">
+        <div className="flex items-center  ">
           <Image src={Logo} height={100} width={100}></Image>
           <h1 className="bg-gradient-to-l from-gray-700 via-gray-700 to-black text-transparent bg-clip-text text-3xl font-bold">
             PLE Essentials
           </h1>
         </div>
-        <div className="w-1/3 text-2xl flex justify-between font-semibold">
+        <div className="md:w-1/2 lg:w-1/3 text-2xl hidden md:flex justify-between font-semibold ">
           <div>About Us</div>
-          <div>Our services</div>
+          <div>Our Services</div>
           <div>Contact</div>
         </div>
       </section>
       <section className="h-screen">
-        <div className="bg-gradient-to-r from-gray-700 via-gray-700 to-black h-full w-full bg-cover relative flex justify-center items-center ">
+        <div className="h-full w-full bg-cover relative flex justify-center items-center bg-gradient-to-r from-gray-700 via-gray-700 to-black">
           <Image
             className="w-full h-full object-cover absolute mix-blend-overlay"
             src={Warehouse}
           ></Image>
-          <div className="flex flex-col gap-6 w-1/3">
-            <div className="text-white text-8xl font-semibold uppercase ">
+          <div className="flex flex-col gap-6 text-center lg:text-left md:gap-6 md:w-2/3 lg:w-1/2 xl:w-1/3">
+            <div className="text-white text-8xl uppercase ">
               mechanical, collision, accessory
             </div>
-            <div className="text-white text-4xl font-semibold">
+            <div className="text-white text-4xl ">
               a part selection that leads the industry.
             </div>
-            <div className="flex w-1/2 justify-between">
+            <div className="flex mx-auto lg:mx-0 w-2/3 md:w-1/2 justify-between">
               <CustomButton>Learn More</CustomButton>
               <CustomButton>Contact</CustomButton>
             </div>
           </div>
-          <div className="w-1/3">
+          <div className="hidden lg:block w-1/3">
             <Image
               className="mx-auto "
               src={Logo2}
@@ -64,11 +64,11 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative flex justify-center items-center min-h-[700px] bg-gray-700">
-        <div className="w-1/3">
-          <Image src={Turbo}></Image>
+      <section className="relative h-screen md:min-h-[700px] flex flex-col lg:flex-row md:gap-10 justify-center items-center bg-gray-700 lg:px-10 xl:px-0">
+        <div className="w-1/2 md:w-1/3 lg:w-1/2 xl:w-1/3">
+          <Image src={Turbo} className="mx-auto"></Image>
         </div>
-        <div className="flex flex-col gap-3 w-1/3 text-white">
+        <div className="flex flex-col gap-6 lg:gap-3 md:w-2/3 lg:w-1/2 xl:w-1/2 2xl:w-1/3 text-white text-center lg:text-left px-5 md:px-0">
           <div className="text-6xl font-extrabold ">About Us</div>
           <div className="text-xl">
             Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -85,7 +85,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative flex flex-col  min-h-[800px] text-black p-64">
+      <section className="relative min-h-[2500px] md:min-h-[1000px] lg:min-h-[800px] flex flex-col justify-center items-center  text-black md:p-4 lg:p-32">
         <div className="custom-shape-divider-top-1703023278">
           <svg
             data-name="Layer 1"
@@ -101,13 +101,17 @@ export default function Home() {
         </div>
         <div className="flex flex-col justify-center items-center gap-20">
           <div className="text-6xl font-extrabold text-gray-800">
-            {' '}
             Our Services
           </div>
-          <div className="flex justify-between items-center w-full">
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+          <div className="flex flex-col md:flex-row gap-5 justify-between items-center w-full">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <Image className="rounded-t-lg" src={Turbo} alt="" />
+                <Image
+                  className="rounded-t-lg mx-auto"
+                  src={Turbo}
+                  width={300}
+                  height={300}
+                />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -142,9 +146,14 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <Image className="rounded-t-lg" src={Turbo} alt="" />
+                <Image
+                  className="rounded-t-lg mx-auto"
+                  src={Turbo}
+                  width={300}
+                  height={300}
+                />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -179,9 +188,14 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+            <div className="max-w-sm bg-white border border-gray-200 rounded-lg shadow-2xl dark:bg-gray-800 dark:border-gray-700">
               <a href="#">
-                <Image className="rounded-t-lg" src={Turbo} alt="" />
+                <Image
+                  className="rounded-t-lg mx-auto"
+                  src={Turbo}
+                  width={300}
+                  height={300}
+                />
               </a>
               <div className="p-5">
                 <a href="#">
@@ -219,7 +233,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="relative flex flex-col  min-h-[700px] bg-gray-700">
+      <section className="relative h-screen md:min-h-[700px] flex flex-col justify-center items-center   bg-gray-700">
         <div className="custom-shape-divider-top-1703023426">
           <svg
             data-name="Layer 1"
@@ -234,7 +248,6 @@ export default function Home() {
           </svg>
         </div>
         <div>
-          <div>Contact</div>
           <section className=" dark:bg-gray-900">
             <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
               <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-center text-white">
@@ -244,11 +257,11 @@ export default function Home() {
                 Got a technical issue? Want to send feedback about a beta
                 feature? Need details about our Business plan? Let us know.
               </p>
-              <form action="#" className="space-y-8">
+              <form action="#" className="space-y-8 ">
                 <div>
                   <label
                     htmlFor="email"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block mb-2 text-xl font-medium text-white "
                   >
                     Your email
                   </label>
@@ -263,7 +276,7 @@ export default function Home() {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+                    className="block mb-2 text-xl font-medium text-white"
                   >
                     Subject
                   </label>
@@ -278,7 +291,7 @@ export default function Home() {
                 <div className="sm:col-span-2">
                   <label
                     htmlFor="message"
-                    className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+                    className="block mb-2 text-xl font-medium text-white"
                   >
                     Your message
                   </label>

@@ -15,7 +15,7 @@
   position: relative;
   display: block;
   width: calc(189% + 1.3px);
-  height: 203px;
+  height: 200px;
 }
 
 .custom-shape-divider-top-1703023278 .shape-fill {
@@ -35,7 +35,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 95px;
+  height: 100px;
   transform: rotateY(180deg);
 }
 
